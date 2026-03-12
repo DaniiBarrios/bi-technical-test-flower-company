@@ -1,29 +1,43 @@
-# Flower Distribution BI Analysis
+# Flower Distribution BI Analysis  
+# Análisis BI – Distribución de Flores
 
-Author: Daniela Barrios  
-Project: BI Technical Test – Flower Distribution Company
+Author / Autor: Daniela Barrios  
+Project / Proyecto: BI Technical Test – Flower Distribution Company  
 
 ---
 
-# PART I – Business Analysis
+# PART I – Business Analysis  
+# PARTE I – Análisis de Negocio
 
-## 1. Region with the Highest Sell-Through Rate
+## 1. Region with the Highest Sell-Through Rate  
+## 1. Región con Mayor Sell-Through
 
-Sell-through rate is calculated as:
+Sell-through rate is calculated as:  
 
-Sell-through = Units Sold / Units Shipped
+Sell-through = Units Sold / Units Shipped  
 
-| Region | Units Shipped | Units Sold | Sell-Through |
+La tasa de sell-through se calcula como:
+
+Sell-through = Unidades Vendidas / Unidades Enviadas
+
+| Region / Región | Units Shipped / Enviadas | Units Sold / Vendidas | Sell-Through |
 |------|------|------|------|
 | Arizona | 1000 | 870 | 87% |
 | New Mexico | 700 | 420 | 60% |
 | Texas | 1500 | 1000 | 66.7% |
 
+**English**
+
 Arizona achieved the highest sell-through rate at **87%**, indicating strong demand and efficient inventory distribution.
+
+**Español**
+
+Arizona alcanzó el mayor sell-through con **87%**, lo que indica una alta demanda y una distribución eficiente del inventario.
 
 ---
 
-## 2. Comparison to the Target (80%)
+## 2. Comparison to the Target (80%)  
+## 2. Comparación con el objetivo (80%)
 
 | Region | Sell-Through | Performance |
 |------|------|------|
@@ -31,64 +45,105 @@ Arizona achieved the highest sell-through rate at **87%**, indicating strong dem
 | Texas | 66.7% | Below target |
 | New Mexico | 60% | Weakest performance |
 
-Arizona exceeded the target, while New Mexico performed the weakest.
+**English**
+
+Arizona exceeded the target of 80%, while Texas and New Mexico performed below expectations.  
+New Mexico shows the weakest performance.
+
+**Español**
+
+Arizona superó el objetivo del 80%, mientras que Texas y New Mexico estuvieron por debajo de la meta.  
+New Mexico presenta el desempeño más bajo.
 
 ---
 
-## 3. Analysis of New Mexico Demand
+## 3. Analysis of New Mexico Demand  
+## 3. Análisis de la Demanda en New Mexico
 
-New Mexico shows a sell-through rate of only 60%.  
-This suggests that shipments may have exceeded actual demand, leading to unsold inventory.
+**English**
 
-Possible explanations include:
+New Mexico shows a sell-through rate of only **60%**, suggesting that inventory shipments may exceed actual demand.  
+This could indicate inventory allocation issues or lower customer demand in the region.
 
-- Over-allocation of inventory
-- Lower local demand
-- Pricing or product mix issues
+**Español**
 
----
-
-## 4. Region to Prioritize for Investigation
-
-New Mexico would be the priority region to investigate because it has the largest gap between shipped and sold units.
-
-A store-level visit could reveal:
-
-- product placement issues
-- local demand differences
-- inventory management problems
+New Mexico presenta un sell-through de **60%**, lo que sugiere que el inventario enviado puede estar por encima de la demanda real.  
+Esto podría indicar problemas en la asignación de inventario o menor demanda local.
 
 ---
 
-## 5. Additional Data Needed
+## 4. Region to Prioritize for Investigation  
+## 4. Región Prioritaria para Investigación
 
-To improve the analysis, the following data would be helpful:
+**English**
 
-- Store-level sales performance
-- Historical sales trends
-- Promotion or discount campaigns
-- Customer traffic data
+New Mexico should be prioritized for further investigation due to its low sell-through rate and high difference between shipped and sold units.
+
+**Español**
+
+New Mexico debería priorizarse para investigación debido a su baja tasa de sell-through y la gran diferencia entre unidades enviadas y vendidas.
+
+---
+
+## 5. Additional Data Needed  
+## 5. Datos Adicionales Necesarios
+
+**English**
+
+To improve the analysis, additional data would be useful:
+
+- Store-level sales
+- Historical demand trends
+- Promotions or marketing campaigns
+- Store traffic
 - Competitor pricing
 
----
+**Español**
 
-# PART II – Data Understanding
+Para mejorar el análisis sería útil contar con:
 
-## Possible Analyses
-
-With this dataset, several analyses could be performed:
-
-- Sales performance by store, region, or product
-- Sell-through rate analysis
-- Shipment timing and inventory turnover
-- Product price and demand correlation
-- Store segmentation by format and volume grade
+- ventas por tienda
+- tendencias históricas de demanda
+- promociones o campañas
+- tráfico de clientes
+- precios de competidores
 
 ---
 
-## Key Columns for Regional Performance
+# PART II – Data Understanding  
+# PARTE II – Comprensión de Datos
 
-Important columns include:
+## Possible Analyses  
+## Análisis Posibles
+
+**English**
+
+With this dataset we could analyze:
+
+- sales performance by store
+- sell-through efficiency
+- shipment timing and inventory turnover
+- product demand patterns
+- store segmentation
+
+**Español**
+
+Con este dataset se pueden realizar análisis como:
+
+- desempeño de ventas por tienda
+- eficiencia del sell-through
+- tiempos de envío y rotación de inventario
+- patrones de demanda por producto
+- segmentación de tiendas
+
+---
+
+## Key Columns for Regional Performance  
+## Columnas Clave para Desempeño Regional
+
+Important fields include:
+
+Campos importantes incluyen:
 
 - store_state
 - store_city
@@ -101,68 +156,44 @@ Important columns include:
 
 ---
 
-## Sell-Through Definition
+## Sell-Through Definition  
+## Definición de Sell-Through
 
-Sell-through rate measures how efficiently shipped inventory converts into sales.
+Sell-through measures how efficiently shipped inventory converts into sales.
 
-Sell-through = Total Quantity Sold / Total Quantity Shipped
+El sell-through mide qué tan eficientemente el inventario enviado se convierte en ventas.
 
----
-
-# KPIs for a BI Dashboard
-
-1. Sell-Through Rate  
-Measures how efficiently shipments convert to sales.
-
-2. Total Units Sold  
-Tracks demand across regions and products.
-
-3. Revenue by Product  
-Identifies top-performing bouquets.
-
-4. Inventory Remaining  
-Units shipped minus units sold.
-
-5. Average Sales per Store  
-Helps compare store performance.
+Sell-through = Total Sold / Total Shipped
 
 ---
 
-# Store Performance Issues
+# KPIs for a BI Dashboard  
+# KPIs para un Dashboard BI
 
-If some stores show high shipments but low sales, possible causes include:
+1️⃣ **Sell-Through Rate**  
+Inventory efficiency
 
-- Overstocking
-- Poor product placement
-- Incorrect pricing
-- Low regional demand
+2️⃣ **Total Units Sold**  
+Total product demand
 
-Additional data needed:
+3️⃣ **Revenue by Product**  
+Identifies top-selling bouquets
 
-- store traffic
-- marketing campaigns
-- inventory levels
-- competitor pricing
+4️⃣ **Inventory Remaining**  
+Units shipped minus units sold
 
----
-
-# Dashboard Structure
-
-A BI dashboard for this analysis could include:
-
-Top KPIs:
-- Total Units Sold
-- Total Shipments
-- Sell-Through Rate
-
-Visualizations:
-- Sales by region (bar chart)
-- Sell-through by region (heatmap)
-- Product performance (top products chart)
-- Map of sales by state
+5️⃣ **Average Sales per Store**  
+Helps compare store performance
 
 ---
 
-# Executive Summary
+# Executive Summary  
+# Resumen Ejecutivo
 
-The analysis reveals significant differences in sell-through performance across regions. Arizona achieved the strongest results, exceeding the 80% target, while New Mexico experienced the weakest performance with a 60% sell-through rate, suggesting potential over-shipment relative to demand. Optimizing inventory allocation and analyzing store-level performance could improve overall sales efficiency.
+**English**
+
+The analysis reveals differences in sell-through performance across regions. Arizona exceeded the 80% target, while New Mexico shows weaker results, suggesting potential over-shipment relative to demand. Optimizing inventory allocation and analyzing store-level performance could significantly improve sales efficiency.
+
+**Español**
+
+El análisis muestra diferencias importantes en el desempeño de sell-through entre regiones. Arizona superó el objetivo del 80%, mientras que New Mexico presenta resultados más bajos, lo que sugiere un posible exceso de inventario respecto a la demanda. Optimizar la asignación de inventario y analizar el desempeño por tienda podría mejorar significativamente la eficiencia de ventas.suggesting potential over-shipment relative to demand. Optimizing inventory allocation and analyzing store-level performance could improve overall sales efficiency.
