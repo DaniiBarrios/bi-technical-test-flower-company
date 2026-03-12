@@ -1,7 +1,7 @@
 # BI Technical Test – Flower Distribution Analysis  
 # Prueba Técnica BI – Análisis de Distribución de Flores
 
-Author / Autor: Daniela Barrios  
+Author / Autor: Angy Daniela Barrios  
 
 ---
 
